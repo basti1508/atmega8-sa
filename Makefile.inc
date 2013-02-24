@@ -2,10 +2,10 @@ AVR_DUDE = avrdude
 AVR_MMCU = m8
 AVR_PROG = avr911
 
-AVR_FLAGS = -c $(AVR_PROG) -P /dev/ttyACM1 -p $(AVR_MMCU)
+AVR_FLAGS = -c $(AVR_PROG) -P /dev/ttyUSB0 -p $(AVR_MMCU)
 
 MCU = atmega8
-CLOCK = 16000000
+CLOCK = 3686400 
 
 CC = avr-gcc
 OBJCOPY = avr-objcopy
